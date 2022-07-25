@@ -1,0 +1,14 @@
+<html>
+  <main>
+    <header><h1>Validación de teléfono mediante expresiones regulares:</h1></header>
+    <body>
+        
+        <form method="post" action="/validacion.php"> 
+            <input type="text" placeholder="Enter 9 digit phone number" 
+            pattern="^\d{9}$"
+        oninvalid="alert('Formato incorrecto, escribe un número de 9 cifras');" required></input>
+       <br> <button type="submit" >Submit</button>
+    </form>
+    </body>
+  </main>
+</html>
